@@ -36,4 +36,5 @@ if __name__ == "__main__":
                          "username": user_name})
 
     json_file = {str(argv[1]): json_list}
-    with open(filename, 'w') as s
+    with open(filename, 'w') as f:
+        json.dump(json_file, f)
